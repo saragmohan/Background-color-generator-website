@@ -4,11 +4,6 @@ var color2 = document.querySelector(".color2");
 var body = document.getElementById("gradient");
 var random = document.querySelector(".random");
 
-function loadColor() {
-    body.style.background = `linear-gradient(to right,${color1.value},${color2.value})`;
-
-    css.textContent = body.style.background + ";";
-}
 
 function setGradient() {
     // body.style.background =
@@ -38,7 +33,7 @@ function setRandomColor() {
 }
 
 
-window.addEventListener("load", loadColor);
+window.addEventListener("load", setGradient);
 
 color1.addEventListener("input", setGradient);
 
