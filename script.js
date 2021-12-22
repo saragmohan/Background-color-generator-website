@@ -8,7 +8,7 @@ function loadColor() {
 
     css.textContent = body.style.background + ";";
 }
-
+window.addEventListener("load", loadColor);
 
 function setGradient() {
     // body.style.background =
